@@ -1,0 +1,32 @@
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">Cooking Quiz</string>
+    <string name="quiz1">1- Is a tomato?</string>
+    <string name="quiz2">2- What are the ingredients in meringue?</string>
+    <string name="quiz3">3- What is the boiling temperature of water?</string>
+    <string name="quiz4">4- Which of these is a berry?</string>
+    <string name="quiz5">5- Name this cheese</string>
+    <string name="quiz6">6- Which one of these cheeses is not french?</string>
+
+    <string name="answer1_quiz1">fruit</string>
+    <string name="answer2_quiz1">vegetable</string>
+    <string name="answer1_quiz2">egg white</string>
+    <string name="answer2_quiz2">milk</string>
+    <string name="answer3_quiz2">sugar</string>
+    <string name="answer4_quiz2">butter</string>
+    <string name="answer1_quiz4">strawberry</string>
+    <string name="answer2_quiz4">raspberry</string>
+    <string name="answer3_quiz4">banana</string>
+    <string name="answer4_quiz4">blackberry</string>
+    <string name="answer1_quiz6">reblochon</string>
+    <string name="answer2_quiz6">manchego</string>
+    <string name="answer3_quiz6">comte</string>
+    <string name="answer5">Parmigiano</string>
+
+    <string name="hint_quiz5">cheese name</string>
+    <string name="hint_quiz3">temperature in celsius</string>
+    <string name="replay">Replay</string>
+    <string name="bad_result_text">Try again!\nYou get only <xliff:g id="score">%d</xliff:g> points</string>
+    <string name="good_result_text">Good! You are amazing.\nYou get <xliff:g id="score">%d</xliff:g> points</string>
+    <string name="excellent_result_text">Wow, <xliff:g id="score">%d</xliff:g> points.\nYou must be a great chef!</string>
+    <string name="toast_message">You get <xliff:g id="score">%d</xliff:g> correct answers</string>
+</resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  android:padding="20dp"
+  android:background="#FBE9E7"
+  tools:context="com.example.android.quizcooking.MainActivity">
+
+  <ScrollView
+    android:id="@+id/quiz_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible">
+
+    <LinearLayout
+      android:id="@+id/quiz_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:orientation="vertical">
+
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/chef_pic"/>
+
+      <TextView
+        style="@style/questionsStyle"
+        android:text="@string/quiz1"/>
+
+      <RadioGroup
+        android:id="@+id/radio_group_quiz1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/answer1_quiz1"/>
+
+        <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/answer2_quiz1"/>
+      </RadioGroup>
+
+      <TextView
+        style="@style/questionsStyle"
+        android:text="@string/quiz2"/>
+
+      <CheckBox
+        android:id="@+id/egg_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer1_quiz2"/>
+
+      <CheckBox
+        android:id="@+id/milk_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer2_quiz2"/>
+
+      <CheckBox
+        android:id="@+id/sugar_checkbox_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer3_quiz2"/>
+
+      <CheckBox
+        android:id="@+id/butter_checkbox_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer4_quiz2"/>
+
+      <TextView
+        style="@style/questionsStyle"
+        android:text="@string/quiz3"/>
+
+      <EditText
+        android:id="@+id/temp_editText_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_quiz3"
+        android:inputType="number"/>
+
+      <TextView
+        style="@style/questionsStyle"
+        android:text="@string/quiz4"/>
+
+      <CheckBox
+        android:id="@+id/strawberry_checkbox_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer1_quiz4"/>
+
+      <CheckBox
+        android:id="@+id/raspberry_checkbox_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer2_quiz4"/>
+
+      <CheckBox
+        android:id="@+id/banana_checkbox_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/answer3_quiz4"/>
+
+      <TextView
+        style="@style/questionsStyle"
+        android:text="@string/quiz5"/>
+
+      <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cheese"/>
+
+      <EditText
+        android:id="@+id/cheese_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_quiz5"
+        android:inputType="textCapWords"/>
+
+      <TextView
+        style="@style/questionsStyle"
+        android:text="@string/quiz6"/>
+
+      <RadioGroup
+        android:id="@+id/radioGroup_quiz6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/answer1_quiz6"/>
+
+        <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/answer2_quiz6"/>
+
+        <RadioButton
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="@string/answer3_quiz6"/>
+
+      </RadioGroup>
+
+      <Button
+        android:id="@+id/submit_button"
+        style="@style/buttonStyle"
+        android:onClick="submit"
+        android:text="Submit"/>
+
+    </LinearLayout>
+
+  </ScrollView>
+
+  <LinearLayout
+    android:id="@+id/result_quiz_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:orientation="vertical">
+
+    <TextView
+      android:id="@+id/result_text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:textSize="20dp"
+      android:gravity="center"
+      android:textColor="@android:color/black" />
+
+    <ImageView
+      android:id="@+id/result_image_view_id"
+      android:layout_width="match_parent"
+      android:layout_height="0dp"
+      android:layout_weight="1"
+      android:src="@drawable/loose_emoticon" />
+
+    <Button
+      android:id="@+id/replay_button"
+      style="@style/buttonStyle"
+      android:text="@string/replay"
+      android:onClick="replay" />
+
+  </LinearLayout>
+
+</LinearLayout>
